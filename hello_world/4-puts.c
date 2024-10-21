@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* This is my function */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
