@@ -1,6 +1,7 @@
 /**
- * main - check the code.
- *
+ * print_sign - check the description.
+ * @n: input
+ * Description: return sign
  * Return: Always 0.
  */
 
