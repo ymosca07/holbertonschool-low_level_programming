@@ -1,5 +1,11 @@
 #include <unistd.h>
 
+/**
+ * print_alphabet_x10 - check the descriptino.
+ * Description: Print alphabets X10
+ * Return: Nothing.
+ */
+
 void print_alphabet_x10(void)
 {
 	int i = 0;
