@@ -9,7 +9,8 @@
 
 void print_alphabet(void)
 {
-	int i = 'a';
+	int i;
+	i = 'a';
 
 	while(i <= 'z')
 	{
