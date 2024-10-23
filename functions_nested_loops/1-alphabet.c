@@ -1,8 +1,8 @@
 #include <unistd.h>
 /**
- * main - Entry point
- *
- * Return: Nothing (Failure)
+ * print_alphabet - Check description
+ * Description: Print alphabet 
+ * Return: Nothing.
  */
 void print_alphabet(void)
 {
