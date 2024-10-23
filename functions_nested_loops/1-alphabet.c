@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * print_alphabet - Check description
- * Description: Print alphabet 
+ * Description: Print alphabet
  * Return: Nothing.
  */
 void print_alphabet(void)
