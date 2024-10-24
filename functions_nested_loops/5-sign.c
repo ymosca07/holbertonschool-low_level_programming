@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * print_sign - check the description.
  * @n: input
