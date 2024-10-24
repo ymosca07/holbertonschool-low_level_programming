@@ -6,7 +6,7 @@
  * Return: value of paramater's int
  */
 
-int _abs(int)
+int _abs(int r)
 {
 	return (r % 10);
 }
