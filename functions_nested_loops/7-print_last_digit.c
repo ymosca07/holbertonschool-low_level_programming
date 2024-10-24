@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_last_digit - check the description
@@ -9,9 +9,14 @@
 
 int print_last_digit(int r)
 {
-	int v;
+	int n;
 
-	v = r % 10;
+	if (r < 0)
+	n = -1 * (r % 10);
+	
+	else
+	n = r % 10;
 
-	return (v);
+	_putchar((n % 10) + '0');
+	return (n % 10);
 }
