@@ -1,9 +1,9 @@
 
 /**
  * _abs - check the description
- * @int r: input
+ * @r: input
  * Description: absolute value
- * Return: value of paramater's int
+ * Return: absolute value of r
  */
 
 int _abs(int r)
