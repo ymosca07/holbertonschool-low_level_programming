@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * jack_bauer - check the description
  * @i, j : input
