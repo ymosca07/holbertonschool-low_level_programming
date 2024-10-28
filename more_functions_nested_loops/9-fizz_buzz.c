@@ -41,6 +41,7 @@ void ft_putnbr(int d)
 void buzz(void)
 {
 	int i = 1;
+	int itoa = i + '0';
 
 	while (i <= 100)
 	{
@@ -58,7 +59,9 @@ void buzz(void)
 		}
 		else if (i >= 1 && i <= 9)
 		{
-			putchar(i);
+			itoa = i + '0';
+
+			write(1, &itoa, 1);
 		}
 		else
 		{
