@@ -67,7 +67,6 @@ void buzz(void)
 		write(1, " ", 1);
 		i++;
 	}
-	write(1, "\n", 1);
 }
 
 /**
