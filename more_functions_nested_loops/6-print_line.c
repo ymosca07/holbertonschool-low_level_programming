@@ -13,11 +13,13 @@ void print_line(int n)
 
 	if (n <= '0')
 	write(1, "\n", 1);
-
+	else
+	{
 	while (i <= n)
 	{
 		write(1, "_", 1);
 		i++;
 	}
 	write(1, "\n", 1);
+	}
 }
