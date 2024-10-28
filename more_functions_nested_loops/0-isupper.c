@@ -1,5 +1,3 @@
-#include "main.c"
-
 /**
  * _isupper - check the description.
  * @c: input
