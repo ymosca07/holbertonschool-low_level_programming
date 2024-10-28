@@ -1,8 +1,9 @@
 /**
  * mul - check the desc
- * @a, @b: input
+ * @a : input
+ * @b : input
  * Desc: mutiply two integers
- * Return: value 
+ * Return: value
  */
 
 int mul(int a, int b)
