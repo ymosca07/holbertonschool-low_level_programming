@@ -56,7 +56,7 @@ void buzz(void)
 				write(1, "Buzz", 4);
 			}
 		}
-		else if (i >= '1' && i <= '9')
+		else if (i >= 1 && i <= 9)
 		{
 			write(1, &i, 1);
 		}
