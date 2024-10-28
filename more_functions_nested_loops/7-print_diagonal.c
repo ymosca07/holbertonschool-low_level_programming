@@ -27,7 +27,7 @@ void print_diagonal(int n)
 			write(1, " ", 1);
 			v++;
 		}
-		write(1, "\\\n", 3);
+		write(1, "\\\n", 2);
 		i++;
 	}
 	}
