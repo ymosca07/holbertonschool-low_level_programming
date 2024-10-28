@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * print_numbers - check the desc
  * Desc: digit
