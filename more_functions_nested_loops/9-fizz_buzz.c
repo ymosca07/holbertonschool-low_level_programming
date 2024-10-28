@@ -4,10 +4,24 @@
 void buzz(void);
 void ft_putnbr(int d);
 
+/**
+ * ft_putchar - check the desc
+ * @c: input
+ * Desc: print caractere
+ * Return: caractere
+ */
+
 void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+/**
+ * ft_putnbr - check the desc
+ * @d: input
+ * Desc: print number
+ * Return: number
+ */
 
 void ft_putnbr(int d)
 {
@@ -17,6 +31,12 @@ void ft_putnbr(int d)
 	}
 	ft_putchar(d % 10 + 48);
 }
+
+/**
+ * buzz - check the desc
+ * Desc: print numbers 1 to 100 with mutiply of 5 and 3
+ * Return: numbers 1 to 100
+ */
 
 void buzz(void)
 {
@@ -36,9 +56,7 @@ void buzz(void)
 				write(1, "Buzz", 4);
 			}
 		}
-		else if ((i >= '1' && i <= '9')
-		&& (i != i % 5 == 0)
-                && (i != i % 3 == 0))
+		else if (i >= '1' && i <= '9')
 		{
 			write(1, &i, 1);
 		}
@@ -51,8 +69,14 @@ void buzz(void)
 	}
 }
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+
 int main(void)
 {
 	buzz();
-	return(0);
+	return (0);
 }
