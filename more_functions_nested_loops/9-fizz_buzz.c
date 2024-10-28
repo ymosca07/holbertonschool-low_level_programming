@@ -58,7 +58,7 @@ void buzz(void)
 		}
 		else if (i >= 1 && i <= 9)
 		{
-			write(1, &i, 1);
+			putchar(i);
 		}
 		else
 		{
