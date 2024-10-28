@@ -1,7 +1,8 @@
+
 /**
  * _isupper - check the description.
  * @c: input
- * Description: chech uppercase or otherwise 
+ * Description: check uppercase or otherwise
  * Return: return 1 or 0
  */
 
