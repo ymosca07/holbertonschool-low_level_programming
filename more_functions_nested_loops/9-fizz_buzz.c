@@ -67,10 +67,14 @@ void buzz(void)
 		{
 			ft_putnbr(i);
 		}
+
+		if (i < 100)
 		write(1, " ", 1);
+
 		i++;
 	}
 	write(1, "\n", 1);
+
 }
 
 /**
