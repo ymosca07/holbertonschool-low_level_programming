@@ -1,24 +1,25 @@
+#include <unistd.h>
+
 /**
  * print_rev - check the desc
  * @s: input
  * Desc: reverse string
- * Return: reverse string
+ * Return: string
  */
-
-#include <unistd.h>
 
 void print_rev(char *s)
 {
 	int i = 0;
 	int j = 0;
+
 	while (s[i] != '\0')
-        {
+	{
 		i++;
 	}
-	while (i > j)
+	while (i > 0)
 	{
-		write(1, &s[j], 1);
-		j--;
+		i--;
+		write(1, &s[i], 1);
 	}
 	write(1, "\n", 1);
 }
