@@ -18,7 +18,7 @@ void print_triangle(int size)
 	{
 		while (i < size)
 		{
-			v = 0;
+			v = 1;
 			while (v < size - i)
 			{
 				write(1, " ", 1);
