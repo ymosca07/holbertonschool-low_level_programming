@@ -13,12 +13,12 @@ int _strlen(char *str)
 
 void puts_half(char *str)
 {
-	int n = (_strlen(str) - 2) / 2;
+	int n = (_strlen(str) - 1) / 2;
 
 	while (str[n] != '\0')
 	{
-		write(1, &str[n], 1);
 		n++;
+		write(1, &str[n], 1);
 	}
 	write(1, "\n", 1);
 }
