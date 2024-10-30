@@ -11,20 +11,11 @@ int _strlen(char *str)
 {
 	int i = 0;
 	
-	if (str[i] == " ")
+	while (str[i] != '\0')
 	{
-		while (str[i] != '\0')
-		{
-			i++;
-		}
+		i++;
 	}
-	else
-	{
-		while (str[i] != '\0')
-		{
-			i++;
-		}
-		
+
 	return (i);
 }
 
@@ -37,10 +28,10 @@ int _strlen(char *str)
 
 void puts_half(char *str)
 {
-	int n = (_strlen(str)) - 1 / 2;
+	int n = ((_strlen(str)) - 1) / 2;
 	int p = (_strlen(str)) / 2;
 
-	if (_strlen(str) % 3 == 0)
+	if (_strlen(str) % 2 == 1)
 	{
 		while (str[n] != '\0')
 		{
@@ -48,7 +39,7 @@ void puts_half(char *str)
 			n++;
 		}
 	}
-	else if (_strlen(str) % 2 == 0)
+	if (_strlen(str) % 2 == 0)
 	{
 		while (str[p] != '\0')
 		{
