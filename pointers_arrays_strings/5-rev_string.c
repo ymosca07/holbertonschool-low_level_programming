@@ -1,21 +1,41 @@
-#include <stdio.h>
-#include <unistd.h>
+/**
+ * _strlen - check the desc
+ * @str: input
+ * Desc: string's numbers
+ * Return: i
+ */
 
-void rev_string(char *s)
+int _strlen(char *str)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
-		write(1, &s[i], 1);
 		i++;
 	}
+	return (i);
+}
 
-	write(1, "\n", 1);
+/**
+ * rev_string - check the desc
+ * @s: input
+ * Desc: reverse string
+ * Return: string
+ */
 
-	while (i > 0)
+void rev_string(char *s)
+{
+	int last = _strlen(s) - 1;
+	int first = 0;
+	char temp;
+
+	while (first < last)
 	{
-		i--;
-		write(1, &s[i], 1);
+		temp = s[first];
+		s[first] = s[last];
+		s[last] = temp;
+
+		first++;
+		last--;
 	}
 }
