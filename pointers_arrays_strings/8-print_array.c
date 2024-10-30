@@ -25,7 +25,7 @@ void print_array(int *a, int n)
 		i++;
 	}
 
-	if (n == '\0')
-	printf(" \n");
+	if (n == 0 || n == -1)
+	printf("\n");
 
 }
