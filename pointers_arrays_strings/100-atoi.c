@@ -10,7 +10,7 @@ int _atoi(char *s)
 	int res = 0;
 	int sign = 1;
 	
-	if (s == "2147483647")
+	if (s <= "2147483647")
 	{
 		return (2147483647);
 	}
