@@ -10,7 +10,7 @@ int _atoi(char *s)
 	int res = 0;
 	int sign = 1;
 
-	if (s[i] < 48 && s[i] > 57 || s[i] == 0)
+	if ((s[i] < 48 && s[i] > 57) || s[i] == 0)
 	return (0);
 
 	if (s[i] == '-' || s[i] == '+')
