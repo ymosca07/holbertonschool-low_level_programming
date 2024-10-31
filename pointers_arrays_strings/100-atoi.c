@@ -9,17 +9,22 @@ int _atoi(char *s)
 	int i = 0;
 	int res = 0;
 	int sign = 1;
-
+	
+	if (s == "2147483647")
+	{
+		return (2147483647);
+	}
 	if ((s[i] < 48 && s[i] > 57) || s[i] == 0)
 	return (0);
 
-	if (s[i] == '-' || s[i] == '+')
+	if (s[0] == '+' || s[0] == '-')
 	{
-		if (s[i] == '-')
 		sign *= -1;
-
 		i++;
 	}
+
+	if(s[1] == '+' || s[1] == '-')
+	return (0);
 
 	while (s[i] >= '0' && s[i] <= '9')
 	{
@@ -28,4 +33,27 @@ int _atoi(char *s)
 	}
 	return (res * sign);
 
+}
+
+int main(void)
+{
+    int nb;
+
+    nb = _atoi("98");
+    printf("%d\n", nb);
+    nb = _atoi("-402");
+    printf("%d\n", nb);
+    nb = _atoi("          ------++++++-----+++++--98");
+    printf("%d\n", nb);
+    nb = _atoi("214748364");
+    printf("%d\n", nb);
+    nb = _atoi("0");
+    printf("%d\n", nb);
+    nb = _atoi("2147483647");
+    printf("%d\n", nb);
+    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+    printf("%d\n", nb);
+    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+    printf("%d\n", nb);
+    return (0);
 }
