@@ -5,7 +5,6 @@
  * Desc: lenght
  * Return: i
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
