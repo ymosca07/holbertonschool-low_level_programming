@@ -1,4 +1,11 @@
-#include <unistd.h>
+/**
+ * _memset - check the desc
+ * @s: memory area
+ * @b: caracter
+ * @n: size
+ * Desc: print memory area s
+ * Return: pointer
+ */
 
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -9,6 +16,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 		i++;
 	}
-	write(1, "\n", 1);
 	return (s);
 }
