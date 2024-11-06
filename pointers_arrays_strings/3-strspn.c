@@ -1,10 +1,11 @@
 /**
  * _strspn - check the desc
  * @s: string
- * @accept: string
- * Desc: lenght
- * Return: i
+ * @accept: compteur
+ * Desc: print memory s
+ * Return: 1
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
