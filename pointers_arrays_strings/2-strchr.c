@@ -1,3 +1,11 @@
+/**
+ * _strchr - check the desc
+ * @s: string
+ * @c : target caracter
+ * Desc: return caracter c to finish
+ * Return: string
+ */
+
 char *_strchr(char *s, char c)
 {
 	int i = 0;
@@ -6,9 +14,9 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (s);
+			return (s + i);
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
