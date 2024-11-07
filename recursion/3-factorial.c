@@ -1,8 +1,8 @@
 /**
  * factorial - check the code
  * @n: number
- * Desc: return fqctoria
- * Return: n
+ * Desc: create factorial of number
+ * Return: factorial of n
  */
 
 int factorial(int n)
