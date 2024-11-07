@@ -1,5 +1,3 @@
-#include <unistd.h>
-
 /**
  * _strlen_recursion - check the desc
  * @s: string
