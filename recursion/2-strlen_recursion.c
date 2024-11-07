@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
  * _strlen_recursion - check the desc
