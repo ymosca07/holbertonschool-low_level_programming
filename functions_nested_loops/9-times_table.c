@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void _putchar(char c)
+void jerome(char c)
 {
 	write(1, &c, 1);
 }
@@ -11,7 +11,7 @@ void _putnbr(int d)
 	{
 		_putnbr(d / 10);
 	}
-	_putchar(d % 10 + 48);
+	jerome(d % 10 + 48);
 }
 
 void times_table(void)
