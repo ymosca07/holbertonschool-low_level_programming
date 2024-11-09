@@ -1,18 +1,38 @@
 #include <unistd.h>
 
+/**
+ * jerome - check the code
+ * @c: integer
+ * Desc: print one digit
+ * Return: c
+ */
+
 void jerome(char c)
 {
 	write(1, &c, 1);
 }
 
+/**
+ * _putnbr - check the code
+ * @d: integer
+ * Desc: print number 
+ * Return: d
+ */
+
 void _putnbr(int d)
 {
-	if(d / 10 != 0)
+	if (d / 10 != 0)
 	{
 		_putnbr(d / 10);
 	}
 	jerome(d % 10 + 48);
 }
+
+/**
+ * times_table - check the code
+ * Desc: print nine tables
+ * Return: tables
+ */
 
 void times_table(void)
 {
