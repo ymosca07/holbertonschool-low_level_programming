@@ -15,7 +15,7 @@ void jerome(char c)
 /**
  * _putnbr - check the code
  * @d: integer
- * Desc: print number 
+ * Desc: print number
  * Return: d
  */
 
