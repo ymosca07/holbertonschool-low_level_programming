@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		tab[i] = 'c';
+		tab[i] = c;
 		i++;
 	}
 
