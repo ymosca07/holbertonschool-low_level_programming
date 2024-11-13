@@ -1,5 +1,31 @@
 #include <stdlib.h>
-#include <string.h>
+
+/**
+ * _strlen - check the code
+ * @str: string
+ * Desc: count string
+ * Return: i
+ */
+
+int _strlen(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
+ * string_nconcat - check the desc
+ * @s1: string
+ * @s2: string
+ * @n: integer
+ * Desc: concatenates
+ * Return: str
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -7,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int j = 0;
 	char *str;
 
-	str = malloc(strlen(s1) + (n < strlen(s2) ? n : strlen(s2)) + 1);
+	str = malloc(_strlen(s1) + (n < _strlen(s2) ? n : _strlen(s2)) + 1);
 
 	if (!str)
 	return (NULL);
