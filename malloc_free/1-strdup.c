@@ -30,6 +30,9 @@ char *_strdup(char *str)
 	int i = 0;
 	char *tab;
 
+	if (str == NULL)
+	return (NULL);
+
 	tab = malloc(sizeof(char) * (_strlen(str) + 1));
 	
 	if (tab == NULL)
