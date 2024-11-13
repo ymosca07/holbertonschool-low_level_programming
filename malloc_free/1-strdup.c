@@ -31,6 +31,9 @@ char *_strdup(char *str)
 	char *tab;
 
 	tab = malloc(sizeof(char) * (_strlen(str) + 1));
+	
+	if (!tab)
+	return (NULL);
 
 	while (str[i] != '\0')
 	{
