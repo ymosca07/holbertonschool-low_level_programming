@@ -32,7 +32,7 @@ char *_strdup(char *str)
 
 	tab = malloc(sizeof(char) * (_strlen(str) + 1));
 	
-	if (!tab)
+	if (tab == NULL)
 	return (NULL);
 
 	while (str[i] != '\0')
