@@ -18,14 +18,14 @@ char *create_array(unsigned int size, char c)
 
 	tab = malloc(sizeof(*tab) * size);
 
+	if (!tab)
+	return (NULL);
+
 	while (i < size)
 	{
 		tab[i] = c;
 		i++;
 	}
-
-	if (!tab)
-	return (NULL);
 
 	return (tab);
 }

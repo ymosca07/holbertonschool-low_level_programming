@@ -1,26 +1,25 @@
 #include <stdlib.h>
 #include "main.c"
+#include "main.h"
 
 int **alloc_grid(int width, int height)
 {
 	if (width <= 0 || height <= 0)
 	return (NULL);
 
+	int i = 0;
+	int j = 0;
 	int **tab;
-	int **str;
 
-	tab = malloc(sizeof(*tab) * (width * height));
-
-	while (tab[width] != '\0')
+	while (i < height)
 	{
-		str[width + height] = tab[width + height];
-		width++;
-	}
+		tab = malloc(sizeof(*tab) * height);
 
-	while (tab[height] != '\0')
-	{
-		str[width + height] = tab[width + height];
-		height;
+		while (j < width)
+		{
+			tab[j] = malloc(sizeof(int) * width);
+			j++;
+		}
+		i++;
 	}
-	return (str);
 }
