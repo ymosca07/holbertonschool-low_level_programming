@@ -1,14 +1,13 @@
 #include <stdlib.h>
-#include "main.h"
 
 void free_grid(int **grid, int height)
 {
-	int i = 0;
+	int i = grid[i];
 
-	while (i < height)
+	while (i > height)
 	{
 		free(grid[i]);
-		i++;
+		i--;
 	}
 
 	free(grid);

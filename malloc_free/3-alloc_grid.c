@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.c"
 
 /**
  * alloc_grid - check the code
