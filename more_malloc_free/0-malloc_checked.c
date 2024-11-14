@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <unistd.h>
 
 /**
  * malloc_checked - check the code
