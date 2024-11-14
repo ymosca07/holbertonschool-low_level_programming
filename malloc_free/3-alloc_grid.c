@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <unistd.h>
 
 int **alloc_grid(int width, int height)
 {
@@ -7,7 +6,7 @@ int **alloc_grid(int width, int height)
 	int j;
 	int **tab;
 
-	if (width <= 0 || heigth <= 0)
+	if (width <= 0 || height <= 0)
 	return (NULL);
 
 	tab = malloc(sizeof(int *) * height);
@@ -18,7 +17,8 @@ int **alloc_grid(int width, int height)
 	while (i < height)
 	{
 		tab[i] = malloc(sizeof(int) * width);
-		
+	
+		j = 0;	
 		while (j < width)
 		{
 			tab[i][j] = 0;
@@ -27,6 +27,5 @@ int **alloc_grid(int width, int height)
 
 		i++;
 	}
-	write(1, "\n", 1);
 	return (tab);
 }
