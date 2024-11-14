@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * malloc_checked - check the code
@@ -16,5 +17,6 @@ void *malloc_checked(unsigned int b)
 	if (p == NULL)
 	exit(98);
 
+	write(1, "\n", 1);
 	return (p);
 }
