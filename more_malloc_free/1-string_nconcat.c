@@ -15,29 +15,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *tab;
 	unsigned int i = 0;
 	unsigned int j = 0;
+	unsigned int len1 = s1 ? _strlen(s1) : 0;
+	unsigned int len2 = s2 ? _strlen(s2) : 0;
+	unsigned int total_len = len1 + (n < len2 ? n : len2) + 1;
 
-	if (n >= _strlen(s2))
-	{
-		tab = malloc(_strlen(s1) + _strlen(s2) + 1);
+	tab = malloc(total_len);
+	if (tab == NULL)
+	return (NULL);
 
-		if (tab == NULL)
-		return (NULL);
-	}
-
-	if (n < _strlen(s2))
-	{
-		tab = malloc(_strlen(s1) + n + 1);
-		if (tab == NULL)
-		return (NULL);
-	}
-
-	while (s1[i] != '\0')
+	while (i < len1)
 	{
 		tab[i] = s1[i];
 		i++;
 	}
 
-	while (j < n)
+	while (j < n && j < len2)
 	{
 		tab[i + j] = s2[j];
 		j++;
