@@ -1,5 +1,13 @@
 #include <stdlib.h>
 
+/**
+ * alloc_grid - check the code
+ * @width: integer
+ * @height: integer
+ * Desc: array
+ * Return: Always 0.
+ */
+
 int **alloc_grid(int width, int height)
 {
 	int i = 0;
@@ -17,8 +25,7 @@ int **alloc_grid(int width, int height)
 	while (i < height)
 	{
 		tab[i] = malloc(sizeof(int) * width);
-	
-		j = 0;	
+		j = 0;
 		while (j < width)
 		{
 			tab[i][j] = 0;
