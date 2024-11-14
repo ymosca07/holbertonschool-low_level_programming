@@ -3,12 +3,12 @@
 
 int **alloc_grid(int width, int height)
 {
-	if (width <= 0 || height <= 0)
-	return (NULL);
-
 	int i = 0;
 	int j;
 	int **tab;
+
+	if (width <= 0 || heigth <= 0)
+	return (NULL);
 
 	tab = malloc(sizeof(int *) * height);
 
