@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <unistd.h>
 
 int **alloc_grid(int width, int height)
 {
@@ -26,5 +27,6 @@ int **alloc_grid(int width, int height)
 
 		i++;
 	}
+	write(1, "\n", 1);
 	return (tab);
 }
