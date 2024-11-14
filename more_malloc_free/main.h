@@ -10,3 +10,5 @@ int _strlen(char *str)
 	}
 	return (i);
 }
+
+void *_calloc(unsigned int nmemb, unsigned int size);
