@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * malloc_checked - check the code
