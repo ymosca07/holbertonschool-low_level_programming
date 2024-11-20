@@ -1,5 +1,3 @@
-#include "main.c"
-
 /**
  * print_name - check the desc
  * @name: name of the person
