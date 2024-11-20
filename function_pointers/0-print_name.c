@@ -1,10 +1,10 @@
 #include "function_pointers.h"
 
 /**
- * print_name - check the desc
- * @name: name of the person
+ * print_name - print name
+ * @name: pointer
  * @f: function
- * Return: Nothing.
+ * Return: nothing
  */
 
 void print_name(char *name, void (*f)(char *))
