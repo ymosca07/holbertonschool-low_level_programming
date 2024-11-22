@@ -27,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			print("%s", res);
+			printf("%s", res);
 		}
 
 
@@ -38,5 +38,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(args, n);
+	va_end(args);
 }
