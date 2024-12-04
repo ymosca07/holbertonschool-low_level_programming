@@ -1,5 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * add_node - check the code
