@@ -19,10 +19,8 @@ list_t *add_node(list_t **head, const char *str)
 	return (NULL);
 
 	i = malloc(sizeof(list_t)); /* On donne la taille de la structure a i */
-	
 	if (i == NULL)
 	return (NULL);
-	
 	i->str = strdup(str); /* Assigne new valeur de str a la structure */
 
 	if (i->str == NULL)
