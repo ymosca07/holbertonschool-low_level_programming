@@ -16,17 +16,17 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *i; /* Nouveau node */
 
 	if (str == NULL)
-	return (NULL);
+	return (0);
 
 	i = malloc(sizeof(list_t)); /* On donne la taille de la structure a i */
 	if (i == NULL)
-	return (NULL);
+	return (0);
 	i->str = strdup(str); /* Assigne new valeur de str a la structure */
 
 	if (i->str == NULL)
 	{
 		free(i);
-		return (NULL);
+		return (0);
 	}
 
 	while (str[count] != '\0') /* Compter nb de caracteres de str */
