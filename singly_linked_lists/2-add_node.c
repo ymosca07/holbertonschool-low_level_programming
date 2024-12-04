@@ -1,19 +1,28 @@
 #include <stddef.h>
+#include <stdlib.h>
+
+/**
+ * add_node - check the code
+ * @head: struct
+ * @str: string
+ * Desc: add new node
+ * Return: i
+ */
 
 list_t *add_node(list_t **head, const char *str)
 {
-	size_t count = 0;
-	list_t *i;
+	size_t count = 0; /* Compteur pour str */
+	list_t *i; /* Nouveau node */
 
 	if (str == NULL)
 	return (NULL);
 
-	i = malloc(sizeof(list_t));
+	i = malloc(sizeof(list_t)); /* On donne la taille de la structure a i */
 	
 	if (i == NULL)
 	return (NULL);
 	
-	i->str = strdup(str);
+	i->str = strdup(str); /* Assigne new valeur de str a la structure */
 
 	if (i->str == NULL)
 	{
@@ -21,15 +30,15 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while (str[count] != '\0')
+	while (str[count] != '\0') /* Compter nb de caracteres de str */
 	{
 		count++;
 	}
 
-	i->len = count;
-	i->next = *head;
-	*head = i;
+	i->len = count; /* Len = a la variable count */
+	i->next = *head; /* Next = a la tete de liste */
+	*head = i; /* Tete de liste = a new node */
 
-	return (i);
+	return (i); /* Return le nouveau node */
 
 }
