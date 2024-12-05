@@ -1,12 +1,21 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * free_list - check the code
+ * @head: struct
+ * Desc: free
+ * Return: nothing
+ */
+
 void free_list(list_t *head)
 {
-	while (head != NULL)
+	if (head != NULL)
 	{
-		head = head->next;
-		free(head);
-	}
+		while (head != NULL)
+		{
+			head = head->next;
+			free(head);
+		}
 	free(head);
 }
