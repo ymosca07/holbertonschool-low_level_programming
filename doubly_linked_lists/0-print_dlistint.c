@@ -2,9 +2,10 @@
 #include "lists.h"
 
 /**
- * printdlistint - check the code
- *
- * Return: Always EXIT_SUCCESS.
+ * print_dlistint - check the code
+ * @h: struct
+ * Desc: print
+ * Return: count
  */
 
 size_t print_dlistint(const dlistint_t *h)
