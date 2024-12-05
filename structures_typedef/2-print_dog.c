@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * print_dog - check the code
+ * @d: struct
+ * Desc: print info
+ * Return: nothing
+ */
+
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
@@ -12,6 +19,8 @@ void print_dog(struct dog *d)
 
 		if (d->age != '\0')
 			printf("Age: %f\n", d->age);
+		else
+			printf("Age: 0.000000\n");
 
 		if (d->owner != NULL)
 			printf("Owner: %s\n", d->owner);
@@ -22,5 +31,5 @@ void print_dog(struct dog *d)
 	else
 	{
 		printf(" ");
-	}	
+	}
 }
