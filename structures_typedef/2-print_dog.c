@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <unistd.h>
 
 /**
  * print_dog - check the code
@@ -30,6 +31,6 @@ void print_dog(struct dog *d)
 	}
 	else
 	{
-		printf(" ");
+		write(1, " ", 0);
 	}
 }
