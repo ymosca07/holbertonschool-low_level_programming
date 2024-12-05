@@ -1,9 +1,18 @@
 #include <stdlib.h>
 #include "lists.h"
+#include <string.h>
+
+/**
+ * add_node - check the code
+ * @head: struct
+ * @str: string
+ * Desc: node a la fin
+ * Return: new_node
+ */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	size_t count = 0;
+	int count = 0;
 	list_t *current, *new_node;
 
 	current = *head;
